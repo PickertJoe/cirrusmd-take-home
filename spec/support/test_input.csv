@@ -1,0 +1,4 @@
+first_name,last_name,dob,member_id,effective_date,expiry_date,phone_number
+Jason,Bateman ,12/12/2010,AB 0000,,,
+Brent ,Wilson,1/1/1988,349090,9/30/19,9/30/2000,(303) 887 3456
+Antonio,Brown ,2/2/1966,890887,9/30/19,9/30/2000,303-333-9987
