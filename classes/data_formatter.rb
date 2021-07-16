@@ -53,8 +53,8 @@ class DataFormatter
     parsable_formats = [
       "%m/%d/%y",
       "%d/%m/%y",
+      "%m-%d-%y",
       "%d/%m/%Y",
-      "%m-/%d-/%y",
       "%Y-%m-%d",
     ]
 
