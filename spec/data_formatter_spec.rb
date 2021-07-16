@@ -16,11 +16,11 @@ describe DataFormatter do
     expect(data_formatter.valid_data.map{ |row| row[:expiry_date] }).to all(match(/\d{4}-\d{2}-\d{2}/))
   end
 
-  it "should return phone numbers in the proper E.164 format" do
-    pending
+  xit "should return phone numbers in the proper E.164 format" do
+    pending "To do"
   end
 
-  it "should mark rows whose phone numbers cannot be formatted as invalid" do
-    pending
+  xit "should mark rows whose phone numbers cannot be formatted as invalid" do
+    pending "To do"
   end
 end
