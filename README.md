@@ -1,3 +1,22 @@
+# Development Notes
+### Prerequisites
+- Ruby >= 2.5
+- Rspec
+
+### Instructions for running
+1. Navigate to ./ruby-take-home
+2. In the command line, execute `ruby script.rb`
+
+### Features to Complete
+- Formatting of telephone numbers
+- Spec for report_generator.rb
+
+### Features to Improve
+- Spec for data_formatter.rb
+- Names for all classes and variables
+- Accept user input for import filename
+- Including more detail in report.txt
+---
 # Goal
 
 Write a Ruby program that transforms raw data into a standardized format. The objective is to provide a valid .csv which allows the highest number of valid patient records
