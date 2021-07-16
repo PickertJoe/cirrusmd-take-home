@@ -10,12 +10,14 @@
 ### Features to Complete
 - Formatting of telephone numbers
 - Spec for report_generator.rb
+- Spec for file_reader.rb
 
 ### Features to Improve
 - Spec for data_formatter.rb
 - Names for all classes and variables
 - Accept user input for import filename
 - Including more detail in report.txt
+- Pluralization on error number in report.txt
 ---
 # Goal
 
