@@ -18,7 +18,7 @@ class ReportGenerator
     report_file = File.open("report.txt", "w")
     report_file.write("The following #{invalid_data.length} records could not be formatted: \n")
     invalid_data.each do |invalid_record|
-      report_file.write(invalid_record.values.join(", "))
+      report_file.write(invalid_record.values.join(", "), "\n")
     end
     report_file.close
   end

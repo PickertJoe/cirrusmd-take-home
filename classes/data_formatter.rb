@@ -14,7 +14,7 @@ class DataFormatter
     @hashed_row_data = @csv_text.to_a.map { |row| row.to_hash }
     validate_presence_of_required_fields
     parse_dates
-    # parse_phone_numbers
+    parse_phone_numbers
     @valid_data = @hashed_row_data
   end
 
@@ -28,7 +28,12 @@ class DataFormatter
 
   def parse_phone_numbers
     @hashed_row_data.each_with_index do |row, index|
-
+      begin
+        row[:phone_number] = format_as_E164(phone_number: row[:phone_number])
+      rescue => e
+        puts "#{e} for record #{row}"
+        @invalid_data.push(@hashed_row_data.delete_at(index))
+      end
     end
   end
 
@@ -70,5 +75,23 @@ class DataFormatter
 
     raise "Invalid date format"
     date
+  end
+
+  def format_as_E164(phone_number: )
+    e164_regexp = /^\+1\d{10}$/
+    return phone_number if e164_regexp.match?(phone_number) || phone_number.nil?
+
+    stripped_phone_number = phone_number.tr('^0-9', '')
+
+    ten_digit_regexp = /^\d{10}$/
+    eleven_digit_regexp = /^1\d{10}$/
+
+    if ten_digit_regexp.match?(stripped_phone_number)
+      return "+1" + stripped_phone_number
+    elsif eleven_digit_regexp.match?(stripped_phone_number)
+      return "+" + stripped_phone_number
+    else
+      raise "Invalid phone number"
+    end
   end
 end

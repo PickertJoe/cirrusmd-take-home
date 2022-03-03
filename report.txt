@@ -1,2 +1,3 @@
-The following 1 records could not be formatted: 
+The following 2 records could not be formatted: 
 Jason, Bateman , 12/12/2010, AB 0000, , , 
+Benny, Samson, 1988-01-13, 349102, 2019-09-30, , 44425559884
