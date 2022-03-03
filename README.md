@@ -8,7 +8,7 @@
 2. In the command line, execute `ruby script.rb`
 
 ### Features to Complete
-~~- Formatting of telephone numbers (Completed as part of a pairing exercise during the interview process)
+~~- Formatting of telephone numbers ~~(Completed as part of a pairing exercise during the interview process)
 - Spec for report_generator.rb
 - Spec for file_reader.rb
 
